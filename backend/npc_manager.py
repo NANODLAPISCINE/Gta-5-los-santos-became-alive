@@ -1,6 +1,6 @@
 from motor.motor_asyncio import AsyncIOMotorCollection
 from .models import NPC, NPCCreate, NPCUpdate, Memory, GameEvent, NPCType, NPCPersonality, Location, ActivityType
-from ai_engine import AIEngine
+from .ai_engine import AIEngine
 from typing import List, Optional, Dict, Any
 from datetime import datetime, timedelta
 import random
