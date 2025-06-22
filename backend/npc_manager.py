@@ -241,7 +241,7 @@ class NPCManager:
     
     def _determine_mood_for_activity(self, activity: ActivityType, personality: NPCPersonality, stress: int):
         """Détermine l'humeur selon l'activité et la personnalité"""
-        from models import NPCMood
+        from .models import NPCMood
         
         if stress > 70:
             return NPCMood.STRESSED
