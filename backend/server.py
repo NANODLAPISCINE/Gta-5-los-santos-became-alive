@@ -10,7 +10,7 @@ from datetime import datetime
 import asyncio
 
 # Import nos modèles et classes
-from models import (
+from .models import (
     NPC, NPCCreate, NPCUpdate, DecisionRequest, DecisionResponse,
     GameEvent, Memory, Location, NPCType, ActivityType
 )
