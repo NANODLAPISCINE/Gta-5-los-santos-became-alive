@@ -2,7 +2,7 @@ import openai
 import os
 import json
 from typing import Dict, List, Any
-from models import NPC, DecisionRequest, DecisionResponse, NPCType, NPCMood, ActivityType, Location
+from .models import NPC, DecisionRequest, DecisionResponse, NPCType, NPCMood, ActivityType, Location
 from datetime import datetime
 import random
 
