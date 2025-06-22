@@ -205,7 +205,7 @@ class NPCManager:
     
     def _generate_schedule(self, npc_type: NPCType) -> List:
         """Génère un planning quotidien selon le type de PNJ"""
-        from models import NPCSchedule
+        from .models import NPCSchedule
         
         schedule = []
         
