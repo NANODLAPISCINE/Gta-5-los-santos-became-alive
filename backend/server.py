@@ -248,6 +248,9 @@ async def get_recent_events(limit: int = 50):
         cursor = db.events.find().sort("timestamp", -1).limit(limit)
         events = []
         async for event_data in cursor:
+            # Convert ObjectId to string
+            if '_id' in event_data:
+                event_data['_id'] = str(event_data['_id'])
             events.append(event_data)
         return events
     except Exception as e:
