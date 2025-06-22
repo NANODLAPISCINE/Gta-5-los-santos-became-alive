@@ -107,7 +107,7 @@ class NPCManager:
             return {"error": "PNJ non trouvé"}
         
         # Construire la requête de décision
-        from models import DecisionRequest
+        from .models import DecisionRequest
         
         nearby_npcs = await self.get_nearby_npcs(npc.current_location)
         nearby_ids = [n.id for n in nearby_npcs if n.id != npc_id]
