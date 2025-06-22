@@ -14,8 +14,8 @@ from .models import (
     NPC, NPCCreate, NPCUpdate, DecisionRequest, DecisionResponse,
     GameEvent, Memory, Location, NPCType, ActivityType
 )
-from ai_engine import AIEngine
-from npc_manager import NPCManager
+from .ai_engine import AIEngine
+from .npc_manager import NPCManager
 
 # Configuration
 ROOT_DIR = Path(__file__).parent
